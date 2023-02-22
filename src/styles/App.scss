@@ -1,0 +1,38 @@
+body {
+  background-color: #fcfbfc;
+  font-family: 'Poppins';
+  font-size: 14px;
+}
+
+.background {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.brand {
+  padding: 20px 20px 45px 20px;
+  margin: 15px;
+  background-color: white;
+  box-shadow: 0px 7px 48px -7px rgba(179, 179, 179, 1);
+}
+
+@include brandStyles('a', #333333, 'inherit', #caaf92);
+@include brandStyles('b', #2168b6, #2168b6, #0051ac);
+
+@media screen and (min-width: 768px) {
+  .brand {
+    display: flex;
+    padding: 40px;
+    .column-1 {
+      flex-basis: 30%;
+    }
+    .column-2 {
+      flex-basis: 70%;
+    }
+  }
+}

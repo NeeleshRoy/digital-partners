@@ -1,0 +1,37 @@
+@mixin brandStyles($brand, $headerColor, $hrColor, $ctaColor) {
+  .brand-#{$brand} {
+    h1 {
+      color: $headerColor;
+      text-transform: uppercase;
+      font-size: 2rem;
+      padding: 10px 0;
+    }
+    h2 {
+      color: $headerColor;
+      font-weight: 700;
+      padding: 5px 0;
+    }
+    hr {
+      width: 130px;
+      margin: 25px 0;
+      color: $hrColor;
+    }
+    p {
+      line-height: 1.5;
+      padding-bottom: 35px;
+    }
+    a {
+      color: #fff;
+      background: $ctaColor;
+      padding: 10px 15px;
+      text-decoration: none;
+      font-size: 14px;
+      margin-right: 10px;
+      border: 2px solid $ctaColor;
+      &:hover {
+        color: $ctaColor;
+        background: #fff;
+      }
+    }
+  }
+}
